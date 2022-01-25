@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: 'Hello ';
+            color: red;
+        }
+        h1::after{
+            content: ' Gelo';
+            color: brown;
+        }
+        blockquote::before{
+            content: open-quote;
+            font-size: 1.5em;
+            color: crimson;
+        }
+        blockquote::after{
+            content: close-quote;
+            font-size: 1.5em;
+            color: crimson;
+        }
+
+        .section-title{
+            display: inline-block;
+        }
+        .section-title::before,
+        .section-title:hover::after{
+            content: '';
+            display: block;
+            background-color: green;
+            height: 2px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Pobarul islam</h1>    
+    <h1>Having fun with bondhu bandhobi</h1>
+
+    <h2 class="section-title">Best Quots</h2>
+    <blockquote>
+        The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela
+    </blockquote>
+
+    <blockquote>
+        The way to get started is to quit talking and begin doing. -Walt Disney
+
+    </blockquote>
+
+    <blockquote>
+        If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. -Oprah Winfrey
+
+    </blockquote>
+</body>
+</html>
